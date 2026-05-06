@@ -1,0 +1,466 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\cert}[2]{\href{#1}{\scriptsize [certificado]}\ \href{#1}{#2}}
+\newcommand{\certitem}[2]{\item\small \cert{#1}{#2}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Victor T. Rodrigues} \\ \vspace{1pt}
+    Presidente Prudente, SP \\ \vspace{1pt}
+ \small \raisebox{-0.1\height} \faPhone \ (18) 99681-1971~\href{mailto:victortavi@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{victortavi@outlook.com}} ~
+ \href{https://linkedin.com/in/victor-taveira}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/victor-taveira}}~
+\href{https://github.com/elvitin}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/elvitin}} ~
+    %\href{https://taveira.dev}{\raisebox{-0.2\height}\faGlobe\ \underline{taveira.dev}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experiência}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Nimbus Sistemas Ltda}{Ago. 2025 -- Atual}
+      {Lead Software Engineer}{Presidente Prudente, SP -- Remoto}
+      \resumeItemListStart
+        \resumeItem{Condução de entrevistas com stakeholders e estudo de ferramentas case de mercado para elicitação de requisitos.}
+        \resumeItem{Criação de Repositório de Conhecimento (Wiki) formalizando a gestão do conhecimento do produto}
+        \resumeItem{Aplicação de algumas cerimônias Scrum, criação de cronograma técnico}
+        \resumeItem{Desenvolvimento de aplicação Monorepo - Software Jurídico que da apoio a criação de Laudo e execução de Perícias Judiciais}
+        \resumeItem{Implementação de infraestrutura CI/CD com entregas automáticas na Azure utilizando GitHub Actions.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Rubcube Tratamento de Dados Ltda}{Março 2024 -- Jun. 2025}
+      {Engenheiro de Software Junior}{Presidente Prudente, SP}
+      \resumeItemListStart
+        %\resumeItem{Participei do Programa de Aceleração \href{https://rubcube.com.br/rubcamp}{\textcolor{blue}{\underline{Rubcamp}}}}
+        %\resumeItem{Participei do Programa de Aceleração \href{https://rubcube.com/rubcamp/}{\textcolor{blue}{Rubcamp}}}
+        \resumeItem{Participação no programa de aceleração \href{https://rubcube.com/rubcamp/}{\underline{Rubcamp}} onde obtive um dos melhores desempenhos de entrega de software}
+        \resumeItem{Apoio técnico a participantes do \href{https://rubcube.com/rubcamp/}{\underline{Rubcamp}} em desafios de infraestrutura, conteinerização Docker, Deploy (CI/CD), Backend (NodeJs) e Mobile (React Native), contribuindo diretamente para seu avanço e aprovação no programa}
+        \resumeItem{Atuação no time de desenvolvimento principal, Core Projetos em ReactJs, React Native, Backend NodeJs.}
+        \resumeItem{Atuação na implementação de features no app mobile \href{https://play.google.com/store/apps/details?id=br.com.road.app}{\underline{Road}}.}
+        \resumeItem{Atuação na implementação de features \& correções de bugs no app mobile de Benefícios \href{https://play.google.com/store/apps/details?id=net.natura.pay&hl=pt_BR}{\underline{Emanapay}} da Natura.}
+        \resumeItem{Implementação de funcionalidades de Bloqueio de Cartão \& SMS Token no aplicativo mobile \href{https://www.bancodigimais.com.br/}{\underline{Digi+}}.}
+        \resumeItem{Construção de consumidores e integração com filas AWS SQS.}
+        \resumeItem{Construção de repositórios DynamoDB}
+        \resumeItem{Implantação de Recursos de Infraestrutura via Terraforms}
+        \resumeItem{Contato com ferramentas de infraestrutura, AWS API Gateway, AWS SSM, AWS Serverless, Google Firebase, AWS CDK, AWS CloudFormation, Terraform, Docker, Docker Compose, GitHub Actions.}
+        \resumeItem{Automação com Shell Script, Python e JavaScript}
+        \resumeItem{Utilização de qualidade de código: Testes Automatizados, (Integração, unidade, E2E), Ferramentas de testes Jest, Vitest e Cypress; Aplicação de Arquitetura Hexagonal e Clean Architecture.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Prefeitura Municipal}{2018 -- 2020}
+      {Estágio em Suporte Técnico -- Dep. de Educação}{Nantes, SP -- Híbrido}
+      \resumeItemListStart
+        \resumeItem{Execução de atividades Administrativas}
+        \resumeItem{Prestação de Suporte Técnico}
+        \resumeItem{Treinamento de Usuários no uso de ferramentas Administrativas}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mercado Conceição}{2015 -- 2018}
+      {Consultor de Implantação}{Nantes, SP -- Presencial}
+      \resumeItemListStart
+        \resumeItem{Levantamento de Requisitos de Infraestrutura para Automação do Mercado}
+        \resumeItem{Criação de Orçamento de Infraestrutura, Compra de Equipamentos \& Software}
+        \resumeItem{Instalação de Equipamentos, Leitores, Balanças, Homologação, Instalação de Software \& Parametrização de Software PDV/ERP}
+        \resumeItem{Treinamento de Usuários/Colaboradores na Operação do Sistema}
+        \resumeItem{Participação direta no aumento de resultados financeiros}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------Projetos-----------
+\section{Projetos}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/elvitin/devtime-releases}{\underline{DevTime}}} $|$ \emph{Rust, ReactJs, Typescript, \href{https://tauri.app/}{\underline{Tauri 2.0}}, \href{https://ui.shadcn.com/}{\underline{Shadcn}}}}{Fevereiro 2026}
+          \resumeItemListStart
+            \resumeItem{Ferramenta Desktop feita com ReactJs e Rust usando Tauri}
+            \resumeItem{Surgiu devia a uma necessidade emergente onde atuando como Pessoa Jurídica, houve-se a necessidade de registrar a carga horária com mais precisão e facilidade}
+            \resumeItem{Antes, o registros de tempo gasto em tarefas de desenvolvimento eram registrados em uma planilha de forma manual}
+            \resumeItem{Com a ferramenta, é possível contabilizar todo o horário produtivo, permitindo pausas e retomadas}
+            \resumeItem{Além disso, a ferramenta exporta uma planilha já com os custos das horas de desenvolvimento acumuladas com precisão}
+            \resumeItem{A entrega do app ocorre via CI/CD através de um pipeline de build e distribuição no Github Actions, onde toda nova versão é publicada em \href{https://github.com/elvitin/devtime-releases}{\underline{devtime-releases}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/elvitin/ezychat}{\underline{Ezychat}}} $|$ \emph{Java, JavaFx, Maven, Protobuf, ORMLite, Slf4j}}{Julho 2025}
+          \resumeItemListStart
+            \resumeItem{Projeto que nasceu a partir de conhecimentos obtidos da disciplina de Sistemas Operacionais \& Redes de Computadores}
+            \resumeItem{Esse projeto explora conceitos base para entendimento de protocolos em diferentes camadas de rede, gerenciamento de processos e threads, etc.}
+            \resumeItem{É uma aplicação de mensagens instantâneas em tempo real que imita no WhatsApp, com arquitetura cliente-servidor, utilizando Java 24, JavaFX para a interface gráfica e comunicação via TCP Sockets com serialização Protocol Buffers (Protobuf), garantindo alta performance e baixa latência na troca de mensagens.}
+            \resumeItem{Estruturei o projeto com arquitetura modular multi-módulo Maven (server, app, common), aplicando princípios de Clean Architecture com separação clara entre camadas de domínio, infraestrutura, casos de uso e apresentação, facilitando manutenção e escalabilidade.}
+            \resumeItem{Implementei comunicação assíncrona e concorrente utilizando Virtual Threads (Project Loom), ConcurrentHashMap, BlockingQueue e CopyOnWriteArrayList para gerenciamento eficiente de conexões simultâneas e processamento de mensagens sem bloqueio.}
+            \resumeItem{Desenvolvi sistema completo de autenticação e registro de usuários com validações de negócio (unicidade de username/email, requisitos de senha), notificação de presença online em tempo real e restauração automática de mensagens pendentes ao reconectar.}
+            \resumeItem{Implementei padrão Event Bus (publish/subscribe) para desacoplamento entre componentes da aplicação cliente, permitindo comunicação reativa entre a camada de rede e a interface gráfica sem acoplamento direto.}
+            \resumeItem{Integrei armazenamento de arquivos com AWS S3 para upload de fotos de perfil dos usuários, e SQLite com ORM (ORMLite) para persistência local de dados no servidor.}
+            \resumeItem{Defini contrato de comunicação entre cliente e servidor com Protocol Buffers, criando schemas .proto tipados para login, registro, mensagens privadas, status de usuário e confirmações — garantindo interoperabilidade e versionamento seguro do protocolo.}
+            \resumeItem{Construí interface gráfica moderna com JavaFX + FXML + CSS, incluindo componentes customizados como lista de mensagens, perfis de contatos com imagens arredondadas e chat aberto, seguindo padrão MVC com controllers dedicados}
+            \resumeItem{Apliquei design patterns como Factory (criação de use cases e repositórios), Singleton (gerenciador de conexões e event bus), Strategy (handlers de payload) e Gateway (abstração de mensageria), demonstrando sólido conhecimento em engenharia de software.}
+            \resumeItem{Tecnologias-chave para destacar: Java 24, Virtual Threads, Protocol Buffers, TCP Sockets, JavaFX, Maven Multi-Module, Clean Architecture, AWS S3, SQLite, ORMLite, Design Patterns, Programação Concorrente.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+        
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/elvitin/rubbank-backend}{\underline{RubBank API REST de Banco Digital (Pré IA)}}} $|$ \emph{NodeJs, Typescript, MVC, JWT}}{Março 2024}
+          \resumeItemListStart
+            \resumeItem{RubBank Backend é uma API REST de banco digital com Node.js, TypeScript, Express, Prisma/PostgreSQL, autenticação JWT com invalidação dinâmica de tokens, criptografia bcrypt, validação com Zod e cobertura de testes com Vitest (unitários, integração e E2E). Ambiente dockerizado com documentação OpenAPI/Swagger.}
+            \resumeItem{Surgiu durante a participação do Rubcamp, esse backend é onde concentra-se a lógica de negócios necessárias para o app \href{https://github.com/elvitin/rubbank-mobile/}{\underline{RubBank Mobile}} }
+            \resumeItem{Ambiente 100\% containerizado com Docker, facilitando reprodutibilidade entre máquinas.}
+            \resumeItem{Testes em três camadas: unitários (validadores), integração (banco de dados) e E2E (endpoints HTTP reais).}
+            \resumeItem{JWT com segredo dinâmico: o segredo é derivado de chave\_base + hash\_senha + timestamp\_último\_logout, tornando tokens inválidos automaticamente após logout ou troca de senha, sem necessidade de lista negra.}
+            \resumeItem{Transações atômicas com Prisma (\$transaction) para garantir consistência nas transferências financeiras.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+            
+        \resumeProjectHeading
+    {\textbf{\href{https://github.com/elvitin/zupzap}{\underline{ZupZap}}} $|$ \emph{C\#, ASP.NET Core, React, MySQL, Docker Compose, Make}}{Dezembro 2022}
+    \resumeItemListStart
+      \resumeItem{Desenvolvi uma aplicação full stack de mensagens com frontend em React 18 e backend em ASP.NET Core, expondo API REST para cadastro, listagem, consulta e exclusão de mensagens.}
+      \resumeItem{Estruturei o backend em camadas Controller, Service e Repository, separando regras de negócio, validações e acesso a dados em MySQL.}
+      \resumeItem{Implementei persistência relacional para mensagens e script de inicialização do banco, com modelo contendo identificador, texto, usuário e data de envio.}
+      \resumeItem{Integrei frontend e backend por meio de proxy para rotas /api e cliente HTTP reutilizável, simplificando o consumo dos endpoints no ambiente local e conteinerizado.}
+      \resumeItem{Containerizei banco, API e frontend com Docker Compose, utilizando healthcheck e automação via Makefile para subir toda a stack e validar a prontidão dos serviços com um comando.}
+      \resumeItem{Apliquei validações de entrada e tratamento básico de conteúdo no serviço de domínio antes da gravação das mensagens.}
+    \resumeItemListEnd
+    \vspace{-13pt}
+    
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------EDUCATION-----------
+\section{Educação}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {FIPP -- Universidade do Oeste Paulista}{Fev. 2022 -- Atual}
+      {Sistemas de Informação -- Bacharelado}{Presidente Prudente, SP}
+        \resumeItemListStart
+            \resumeItem{Formação com foco em Engenharia de Software, Desenvolvimento Web/Mobile e Arquitetura de Sistemas.}
+            \resumeItem{Base em Banco de Dados, Estruturas de Dados, Algoritmos, Pesquisa e Ordenação e Pesquisa Operacional.}
+            \resumeItem{Conhecimentos em Redes de Computadores, Sistemas Operacionais, Segurança e Auditoria de Sistemas.}
+            \resumeItem{Experiência acadêmica em IA, BI, MLOps, Computação em Nuvem e integração de serviços.}
+            \resumeItem{Disciplinas de gestão: Gestão de Projetos, Governança de TI, Operações e Logística, Simulação Gerencial.}
+            \resumeItem{Projetos práticos e Estágio Supervisionado com aplicação de conceitos em cenários reais.}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Escola Estadual Rage Andeiras Prof.}{Concluído}
+      {Ensino Médio}{Nantes, SP}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+% \section{Habilidades Técnicas}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Linguagens}{: JavaScript, Java, C\#, C, C++, SQL, Python, Bash} \\
+%      \textbf{Ferramentas}{: Git, GitHub Actions, Docker, Docker Compose, Figma, Adobe XD, Firebase} \\
+%      \textbf{Tecnologias/Frameworks}{: Node.js, Deno, Express.js, NestJS, Java EE, Spring, Spring Boot, React Native, ReactJS, HTML5, CSS3, Bootstrap, Tailwind CSS, PostgreSQL, Oracle, Linux, AWS, RESTful APIs, Jest, Vitest, Cypress} \\
+%     }}
+%  \end{itemize}
+%  \vspace{-16pt}
+
+%-----------QUALIFICAÇÕES-----------
+% \section{Qualificações}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Desenvolvimento de Software}{Resumo}{Competências principais}{ }
+%             \resumeItemListStart
+%                 \resumeItem{Experiência inicial no desenvolvimento de APIs com Node.js e Express.js, além de Java EE com Servlets e Spring Boot.}
+%                 \resumeItem{Conhecimento em Linux, arquitetura RESTful, lógica de programação e noções de arquitetura de computadores.}
+%                 \resumeItem{Perfil com proatividade, boa comunicação, capacidade de resolução de problemas e adaptação a novas tecnologias.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+%------CURSOS COMPLEMENTARES-------
+\section{Formação Complementar \& Certificações}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+    \item \small \textbf{\href{https://anthropic.skilljar.com/}{\underline{Anthropic Skilljar}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small \href{https://verify.skilljar.com/c/26xevfmxt6xn}{\underline{Claude Code in Action -- Março 2026}}
+    \end{itemize}
+
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2024.pdf}{\underline{Infoeste 2024 -- 36ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small Global Career Opportunities - Construindo uma Carreira Internacional: Desbloqueie seu Potencial para uma Carreira em TI de Sucesso!
+        \item\small Google Cloud - Crie Modelos de Machine Learning com o BigQuery ML
+        \item\small Arduino e Tinkercad: Dominando a Eletrônica Simulada
+        \item\small Produção de conteúdo para o Instagram
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2023.pdf}{\underline{Infoeste 2023 -- 35ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small Google - Conceitos básicos de  computação em nuvem
+        \item\small Google Cloud - Crie Modelos de Machine Learning com o BigQuery ML
+        \item\small Arduino e Tinkercad: Dominando a Eletrônica Simulada
+        \item\small Produção de conteúdo para o Instagram
+    \end{itemize}
+
+    %     \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/desenvolve/CertificadoDesenvolve2023.pdf}{\underline{Programa Desenvolve 2023 - Formação em FullStack}}}
+    % \begin{itemize}[itemsep=-5pt, parsep=3pt]
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-database-sql-dml/formalCertificate}{SQL com Oracle: manipule e consulte dados}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/mysql-manipule-dados-com-sql/formalCertificate}{SQL com MySQL: manipule e consulte dados}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/shellscripting/formalCertificate}{Shell Scripting parte 1: scripts de automação de tarefas}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/node-rest-api/formalCertificate}{Rest com NodeJS: API com Express e MySQL}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/introducao-postgresql-primeiros-passos/formalCertificate}{PostgreSQL}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-avancando-sequelize/formalCertificate}{ORM com NodeJS: avançando nas funcionalidades do Sequelize}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-api-sequelize-mysql/formalCertificate}{ORM com NodeJS: API com Sequelize e MySQL}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-plsql-procedures-funcoes-excecoes/formalCertificate}{Oracle PL/SQL: Procedures, funções e exceções}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-streaming-dados/formalCertificate}{NodeJS: Streaming de dados e Repositório}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-padronizada-escalavel/formalCertificate}{NodeJS: crie uma API REST padronizada e escalável}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-controle-versao/formalCertificate}{NodeJS: avançando em APIs REST com controle de versões}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/maven-gerenciamento-dependencias-build-aplicacoes-java/formalCertificate}{Maven: gerenciamento de dependências e build de aplicações Java}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-tipos-variaveis-funcoes/formalCertificate}{JavaScript: tipos, variáveis e funções}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-objetos/formalCertificate}{JavaScript: objetos}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/servlets-fundamentos-programacao-web-java/formalCertificate}{Java Servlet: programação web Java}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/servlet-autenticacao-autorizacao-mvc/formalCertificate}{Java Servlet: autenticação, autorização e o padrão MVC}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/http-fundamentos/formalCertificate}{HTTP: Entendendo a web por baixo dos panos}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/git-github-controle-de-versao/formalCertificate}{Git e Github: controle e compartilhe seu código}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/habitos/formalCertificate}{Hábitos: da produtividade às metas pessoais}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/feedback/formalCertificate}{Feedback: a arte de orientar e ser orientado com sentido}
+    %     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/comunicacao/formalCertificate}{Comunicação: como se expressar bem e ser compreendido}
+    % \end{itemize}
+
+%     \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/desenvolve/CertificadoDesenvolve2023.pdf}{\underline{Programa Desenvolve 2023 - Formação em FullStack}}}
+% \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-database-sql-dml/formalCertificate}{\underline{SQL com Oracle: manipule e consulte dados}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/mysql-manipule-dados-com-sql/formalCertificate}{\underline{SQL com MySQL: manipule e consulte dados}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/shellscripting/formalCertificate}{\underline{Shell Scripting parte 1: scripts de automação de tarefas}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/node-rest-api/formalCertificate}{\underline{Rest com NodeJS: API com Express e MySQL}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/introducao-postgresql-primeiros-passos/formalCertificate}{\underline{PostgreSQL}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-avancando-sequelize/formalCertificate}{\underline{ORM com NodeJS: avançando nas funcionalidades do Sequelize}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-api-sequelize-mysql/formalCertificate}{\underline{ORM com NodeJS: API com Sequelize e MySQL}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-plsql-procedures-funcoes-excecoes/formalCertificate}{\underline{Oracle PL/SQL: Procedures, funções e exceções}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-streaming-dados/formalCertificate}{\underline{NodeJS: Streaming de dados e Repositório}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-padronizada-escalavel/formalCertificate}{\underline{NodeJS: crie uma API REST padronizada e escalável}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-controle-versao/formalCertificate}{\underline{NodeJS: avançando em APIs REST com controle de versões}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/maven-gerenciamento-dependencias-build-aplicacoes-java/formalCertificate}{\underline{Maven: gerenciamento de dependências e build de aplicações Java}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-tipos-variaveis-funcoes/formalCertificate}{\underline{JavaScript: tipos, variáveis e funções}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-objetos/formalCertificate}{\underline{JavaScript: objetos}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/servlets-fundamentos-programacao-web-java/formalCertificate}{\underline{Java Servlet: programação web Java}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/servlet-autenticacao-autorizacao-mvc/formalCertificate}{\underline{Java Servlet: autenticação, autorização e o padrão MVC}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/http-fundamentos/formalCertificate}{\underline{HTTP: Entendendo a web por baixo dos panos}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/git-github-controle-de-versao/formalCertificate}{\underline{Git e Github: controle e compartilhe seu código}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/habitos/formalCertificate}{\underline{Hábitos: da produtividade às metas pessoais}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/feedback/formalCertificate}{\underline{Feedback: a arte de orientar e ser orientado com sentido}}
+%     \item\small \href{https://cursos.alura.com.br/user/v-rodrigues/course/comunicacao/formalCertificate}{\underline{Comunicação: como se expressar bem e ser compreendido}}
+% \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/desenvolve/CertificadoDesenvolve2023.pdf}{\underline{Programa Desenvolve 2023 - Formação em FullStack}}}
+\begin{itemize}[itemsep=-5pt, parsep=3pt]
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-database-sql-dml/formalCertificate}{SQL com Oracle: manipule e consulte dados}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/mysql-manipule-dados-com-sql/formalCertificate}{SQL com MySQL: manipule e consulte dados}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/shellscripting/formalCertificate}{Shell Scripting parte 1: scripts de automação de tarefas}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/node-rest-api/formalCertificate}{Rest com NodeJS: API com Express e MySQL}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/introducao-postgresql-primeiros-passos/formalCertificate}{PostgreSQL}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-avancando-sequelize/formalCertificate}{ORM com NodeJS: avançando nas funcionalidades do Sequelize}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/orm-nodejs-api-sequelize-mysql/formalCertificate}{ORM com NodeJS: API com Sequelize e MySQL}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/oracle-plsql-procedures-funcoes-excecoes/formalCertificate}{Oracle PL/SQL: Procedures, funções e exceções}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-streaming-dados/formalCertificate}{NodeJS: Streaming de dados e Repositório}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-padronizada-escalavel/formalCertificate}{NodeJS: crie uma API REST padronizada e escalável}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/nodejs-api-rest-controle-versao/formalCertificate}{NodeJS: avançando em APIs REST com controle de versões}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/maven-gerenciamento-dependencias-build-aplicacoes-java/formalCertificate}{Maven: gerenciamento de dependências e build de aplicações Java}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-tipos-variaveis-funcoes/formalCertificate}{JavaScript: tipos, variáveis e funções}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/fundamentos-javascript-objetos/formalCertificate}{JavaScript: objetos}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/servlets-fundamentos-programacao-web-java/formalCertificate}{Java Servlet: programação web Java}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/servlet-autenticacao-autorizacao-mvc/formalCertificate}{Java Servlet: autenticação, autorização e o padrão MVC}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/http-fundamentos/formalCertificate}{HTTP: Entendendo a web por baixo dos panos}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/git-github-controle-de-versao/formalCertificate}{Git e Github: controle e compartilhe seu código}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/habitos/formalCertificate}{Hábitos: da produtividade às metas pessoais}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/feedback/formalCertificate}{Feedback: a arte de orientar e ser orientado com sentido}
+    \item\small \cert{https://cursos.alura.com.br/user/v-rodrigues/course/comunicacao/formalCertificate}{Comunicação: como se expressar bem e ser compreendido}
+\end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2022.pdf}{\underline{Infoeste 2022 -- 34ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small Empreendedorismo Tecnológico
+        \item\small Marketing Digital
+        \item\small Introdução ao Agile Thinking
+        \item\small Power BI
+    \end{itemize}
+    \end{itemize}
+
+%------ Outros -------
+\section{Palestras, Webinars, Eventos \& Hackathons}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/sebrae-startupday/certificado_startupday_marco_2026.pdf}{\underline{Março 2026 - Startup Day - SEBRAE Startups}}}
+    
+    
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2025.pdf}{\underline{Infoeste 2025 -- 37ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Hackathon) 19ª Maratona de Programação da FIPP/Unoeste
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2024.pdf}{\underline{Infoeste 2024 -- 36ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Hackathon) 18ª Maratona de Programação da FIPP/Unoeste
+        \item\small (Evento) 14º Festival Cultural FIPP/Unoeste
+        \item\small (Palestra) IA Generativa: Criando o Novo com Inteligência Artificial
+        \item\small (Palestra) Cloud Run: From Zero to Hero (GDG DevFest)
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2023.pdf}{\underline{Infoeste 2023 -- 35ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Hackathon) 17ª Maratona de Programação da FIPP/Unoeste
+        \item\small (Evento) 13º Festival Cultural FIPP/Unoeste
+        \item\small (Palestra) Do Home Office para o Mundo!!!!
+        \item\small (Palestra) IA Generativa com Large Language Models: uma introdução "mão-na-massa"
+        \item\small (Palestra) Ipag: A trajetória de uma Fintech de Sucesso
+        \item\small (Evento) Modelagem de Dados Dimensional para BI e Analytics (GDG DevFest)
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2022.pdf}{\underline{Infoeste 2022 -- 34ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Palestra) B3, Havan, Itaú, Magalu Smarthint e Vericode EXPERIENCE
+        \item\small (Hackathon) 16ª Maratona de Programação da FIPP/Unoeste
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2020.pdf}{\underline{Infoeste 2020 -- 33ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Webinar) FIPP/Unoeste Mundo
+        \item\small (Webinar) Forense computacional no âmbito da perícia oficial
+        \item\small (Webinar) O profissional de Data Science
+        \item\small (Webinar) Tornando-se um Gamedev
+    \end{itemize}
+
+    \item \small \textbf{\href{https://raw.githubusercontent.com/elvitin/curriculo/main/certs/infoeste/Certificado2019.pdf}{\underline{Infoeste 2019 -- 32ª Semana de Computação e Informática da FIPP/Unoeste}}}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small (Palestra) GetNinjas: Da ideia a R\$47MM em investimento
+        \item\small (Palestra) InternetcomResponsa: Cuidados e Responsabilidades no uso da Internet
+        \item\small (Palestra) O papel da Inteligência Artificial na transformação dos negócios
+        \item\small (Palestra) Tecnologia \& Empreendedorismo
+        \item\small (Evento) 26º Encontro de Alunos e Ex-alunos da FIPP
+    \end{itemize}
+
+
+\end{itemize}    
+
+\end{document}
